@@ -1,0 +1,121 @@
+@import "./fonts";
+@import "./colors";
+@import "./variables";
+
+/* #region Common */
+
+*, 
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $primary-font, sans-serif;
+  font-weight: 400;
+  color: $black-02-color;
+  background-color: $white-color;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* #endregion */
+
+/* #region Containers */
+
+.container {
+	// width: 100%;
+	width: 345px;
+	margin-right: auto;
+	margin-left: auto;
+
+  @media (min-width: $breakpoint-mobile) {
+    width: 1085px;
+  }
+}
+
+/* #endregion */
+
+/* #region Headings */
+
+.heading {
+  font-family: $primary-font, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: normal;
+  color: $black-01-color;
+
+  &_l {
+    font-size: 28px;
+    text-align: center;
+
+    @media (min-width: $breakpoint-mobile) {
+      font-size: 34px;
+      text-align: start;
+    }
+  }
+
+  &_underline {
+    position: relative;
+    display: inline-block;
+    font-size: 34px;
+    font-weight: 400;
+  
+    &::after {
+      content: "";
+      position: absolute;
+      left: 20%;
+      right: 20%;
+      bottom: -15px;
+      height: 4px;
+      background: $underline-gradient;
+    }
+  }
+
+  &_m {
+    font-size: 20px;
+    line-height: 140%;
+    color: $black-03-color;
+
+    @media (min-width: $breakpoint-mobile) {
+      font-size: 24px;
+      line-height: normal;
+    }
+  }
+
+  &_s {    
+    font-size: 17px;
+    color: $black-02-color;
+
+    @media (min-width: $breakpoint-mobile) {
+      font-size: 18px;
+    }
+  }
+}
+
