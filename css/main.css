@@ -200,14 +200,14 @@
 .leave-request-button:hover .leave-request-button__circle {
   background-color: #4B59B8;
 }
+.leave-request-button:hover .leave-request-button__text {
+  color: #4B59B8;
+}
 .leave-request-button__text {
   font-size: 17px;
   font-weight: 600;
   color: #575757;
   transition: 0.3s;
-}
-.leave-request-button__text:hover {
-  color: #4B59B8;
 }
 @media (min-width: 375px) {
   .leave-request-button__text {
@@ -215,6 +215,7 @@
   }
 }
 .leave-request-button__circle {
+  display: block;
   position: relative;
   display: flex;
   justify-content: center;

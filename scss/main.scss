@@ -212,15 +212,15 @@
     background-color: $purple-color;
   }
 
+  &:hover &__text {
+    color: $purple-color;
+  }
+
   &__text {
     font-size: 17px;
     font-weight: 600;
     color: $black-05-color;
     transition: $button-transition;
-
-    &:hover {
-      color: $purple-color;
-    }
 
     @media (min-width: $breakpoint-mobile) {
       font-size: 18px;
@@ -228,6 +228,7 @@
   }
 
   &__circle {
+    display: block;
     position: relative;
     display: flex;
     justify-content: center;
