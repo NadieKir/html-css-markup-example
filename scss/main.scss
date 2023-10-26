@@ -110,12 +110,13 @@
 
   &__wrapper {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     row-gap: 19px;
     overflow: hidden;
     
     @media (min-width: $breakpoint-tablet) {
-      flex-direction: row;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
       column-gap: 27px;
     }
 

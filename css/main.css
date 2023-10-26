@@ -97,13 +97,14 @@
 }
 .accordion-item-content__wrapper {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   row-gap: 19px;
   overflow: hidden;
 }
 @media (min-width: 768px) {
   .accordion-item-content__wrapper {
-    flex-direction: row;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
     -moz-column-gap: 27px;
          column-gap: 27px;
   }
