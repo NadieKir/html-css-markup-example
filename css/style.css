@@ -65,13 +65,17 @@ a {
 /* #endregion */
 /* #region Containers */
 .container {
-  width: 345px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 @media (min-width: 375px) {
   .container {
-    width: 1085px;
+    max-width: 1155px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 }
 
