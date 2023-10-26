@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "tale-by-icons";
+  src: url("../icons/tale-by-icons.eot?ar0e7b");
+  src: url("../icons/tale-by-icons.eot?ar0e7b#iefix") format("embedded-opentype"), url("../icons/tale-by-icons.ttf?ar0e7b") format("truetype"), url("../icons/tale-by-icons.woff?ar0e7b") format("woff"), url("../icons/tale-by-icons.svg?ar0e7b#tale-by-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  font-family: "tale-by-icons" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow:before {
+  content: "\e900";
+  color: #FFFFFF;
+}
+
+.icon-loudspeaker:before {
+  content: "\e901";
+  color: #01BCD6;
+}
+
+.icon-rocket:before {
+  content: "\e902";
+  color: #4B59B8;
+}
+
+.icon-tick:before {
+  content: "\e903";
+  color: #393939;
+}/*# sourceMappingURL=icons.css.map */

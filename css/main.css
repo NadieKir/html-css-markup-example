@@ -1,4 +1,4 @@
-/* #region Work stages */
+/* #region WORK STAGES */
 .work-stages {
   display: flex;
   flex-direction: column;
@@ -12,10 +12,14 @@
   }
 }
 
+/* #region Accordion */
 .accordion {
   display: flex;
   flex-direction: column;
   width: 100%;
+  list-style: none;
+  margin: 0;
+  padding-inline-start: 0;
 }
 
 .accordion-item {
@@ -174,6 +178,9 @@
   background: #FFFFFF;
   color: #393939;
 }
+.details__bullet {
+  font-size: 9px;
+}
 
 .leave-request-button {
   display: flex;
@@ -239,7 +246,8 @@
   }
 }
 /* #endregion */
-/* #region Lorem ipsum */
+/* #endregion */
+/* #region ABOUT */
 .about {
   padding: 48px 0 35px;
 }
@@ -272,7 +280,7 @@
   }
 }
 .experience__image {
-  width: 248px;
+  height: 240px;
 }
 @media (min-width: 375px) {
   .experience__image {
@@ -333,7 +341,7 @@
 }
 @media (min-width: 375px) {
   .tags {
-    width: 80%;
+    width: 70%;
     flex-direction: row;
     justify-content: space-between;
     font-size: 16px;
@@ -349,6 +357,9 @@
 .tags__item:nth-child(even) {
   margin-left: auto;
   color: #4B59B8;
+}
+.tags__image {
+  font-size: 35px;
 }
 
 /* #endregion *//*# sourceMappingURL=main.css.map */

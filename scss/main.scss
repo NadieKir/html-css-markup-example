@@ -1,7 +1,7 @@
 @import "./variables";
 @import "./colors";
 
-/* #region Work stages */
+/* #region WORK STAGES */
 
 .work-stages {
   display: flex;
@@ -15,10 +15,15 @@
   }
 }
 
+/* #region Accordion */
+
 .accordion {
   display: flex;
   flex-direction: column;
   width: 100%;
+  list-style: none;
+  margin: 0;
+  padding-inline-start: 0;
 }
 
 .accordion-item {
@@ -184,6 +189,10 @@
     background: $white-color;
     color: $black-02-color;
   }
+
+  &__bullet {
+    font-size: 9px;
+  }
 }
 
 .leave-request-button {
@@ -254,7 +263,9 @@
 
 /* #endregion */
 
-/* #region Lorem ipsum */
+/* #endregion */
+
+/* #region ABOUT */
 
 .about {
   padding: 48px 0 35px;
@@ -286,7 +297,7 @@
   }
 
   &__image {
-    width: 248px;
+    height: 240px;
 
     @media (min-width: $breakpoint-mobile) {
       width: 313px;
@@ -348,7 +359,7 @@
   line-height: 142%;
 
   @media (min-width: $breakpoint-mobile) {
-    width: 80%;
+    width: 70%;
     flex-direction: row;
     justify-content: space-between;
     font-size: 16px;
@@ -364,6 +375,10 @@
       margin-left: auto;
       color: $purple-color;
     }
+  }
+
+  &__image {
+    font-size: 35px;
   }
 }
 
